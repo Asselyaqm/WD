@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Project: Blog</title>
+        <style>
+            body{
+                background-color:rgb(191, 221, 255);
+                color:rgb(37, 57, 232);
+            }
+            #first{
+                font-style:oblique;
+                font-family:sans-serif;
+                height:20px;
+                font-size:150%;
+                font-weight:bold;
+            }
+            #second{
+                font-style:italic;
+                font-family:serif;
+                height:20px;
+                font-size:150%;
+                font-weight:bold;
+            }
+            #this{
+                font-family:serif;
+                font-style:italic;
+                
+            }
+             #back{
+                font-family:serif;
+                font-style:italic;
+                
+            }
+        </style>
+    </head>
+    <body>
+        
+        <h1>Assel's blog</h1>
+
+        <h3>Contents</h3>
+        <ul>
+            <li><a href="#first">First post!</a><br></li>
+             <li><a href="#second">Second post!</a></li>
+         
+        </ul>
+       
+        <h2 id="first">First post</h2>
+        <h6>Posted on January 17 2020</h6>
+        
+        <p id="back">Back when I first started writing blog posts I would hammer people with a whole bunch of information and advice. While the information itself was good, it wasn’t interesting. The readers couldn’t develop a relationship with the posts and my audience didn’t grow for months. Luckily, I received an email from one of the readers which essentially changed the way I went about writing. It told me one important thing and that was that I needed to include personal stories within my posts. Ever since I have experienced much higher engagement with the blog posts I write.</p>
+        
+        <h2 id="second">Second post</h2>
+        <h6>Posted on February 22 2020</h6>
+        
+        <p id="this">This is my second post about the post i posted before but it didn't post and another post that i wanted to post was posted in wrong way and i decided to change the post i wanted to post so the post would post.</p>
+        
+        
+    </body>
+</html>

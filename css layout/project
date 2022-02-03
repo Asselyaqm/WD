@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Project: Event invite</title>
+        <style>
+        body{
+            background-color:rgb(189, 189, 189);
+        }
+            #invite{
+                color:rgb(255, 255, 255);
+                text-align:center;
+                font-family:sans-serif;
+                 margin-top:10%;
+                 font-size:300%;
+            }
+            #speech{
+                color:rgb(0, 0, 0);
+                margin-left:100px;
+                height:3px;
+                font-size:180%;
+                
+            }
+            #speech2{
+                color:rgb(0, 0, 0);
+                margin-left:350px;
+               position:relative;
+               font-size:180%;
+            }
+            .details{
+                color:white;
+                font-size:140%;
+                font-family:monospace;
+                
+            }
+        </style>
+    </head>
+    <body>  <h2 id="speech">TIME TO</h2>
+        <h1 id="invite">ALL WHITE</h1>
+      <h2 id="speech2">PARTY</h2>
+        
+        <div class="details">
+        <p>The details:</p>
+        <ul>
+            <li>You were invited!</li>
+            <li>Wear white obviously!</li>
+            <li>Date 02.02.2022</li>
+            <li>Address beach</li>
+        </ul>
+            
+        </div>
+        <img src="">
+    </body>
+</html>
