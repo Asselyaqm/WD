@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.content-container {
+    padding: 0 400px;
+    background-color: #F0F2F5;
+}
+
+.main_content-container {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    height: 80vh;
+}
+
+.main_content-text_container {
+    width: 500px;
+}
+
+.company_name-title {
+    font-size: 60px;
+    font-weight: 700;
+    color: #1877F2;
+}
+
+.company_description-text {
+    color: #1C1E21;
+    font-size: 30px;
+}
+
+
+.form-container {
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 7px -4px;
+    width: 100%;
+    padding: 20px;
+    width: 450px;
+    margin: 0 auto;
+}
+
+.form-main_content-container {
+    border-bottom: 1px solid #DADDE1;
+    margin-bottom: 10px;
+}
+
+.form-email_input-field,
+.form-password_input-field {
+    width: 100%;
+    outline: none;
+    border: 1px solid #DDDFE2;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.form-email_input-field::placeholder,
+.form-password_input-field::placeholder {
+    font-size: 18px;
+    color: #90949C
+}
+
+.form-submit_button {
+    width: 100%;
+    font-size: 20px;
+    padding: 12.5px 0;
+    background-color: #1877F2;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    transition: 250ms ease;
+}
+
+.form-submit_button:hover {
+    background-color: #166FE5
+}
+
+.form-forgot_password-anchor {
+    text-decoration: none;
+    color: #188CF5;
+    margin: 20px 0;
+    display: block;
+    text-align: center;
+    font-size: 13px;
+}
+
+.form-create_new-button {
+    width: 70%;
+    border-radius: 5px;
+    color: white;
+    background-color: #42B72A;
+    padding: 12.5px 0;
+    margin: 0 auto;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    display: block;
+    transition: 250ms ease;
+}
+
+.form-create_new-button:hover {
+    background-color: #36a420;
+}
+
+.create_new_description-text {
+    width: 78.5%;
+    margin: 25px auto 0;
+    text-align: center;
+    display: block;
+    font-size: 14px;
+}
+
+.create_new_one {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+.create_new_one:hover,
+.form-forgot_password-anchor:hover {
+    text-decoration: underline;
+}
+
+.languages-list {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.languages-list>li {
+    color: #8A8D91;
+    font-size: 13px;
+}
+
+.languages-list>li>a {
+    text-decoration: none;
+}
+
+.languages-list>li>a:hover {
+    text-decoration: underline;
+}
+
+.footer_content-container {
+    background-color: #fff;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 0 400px;
+    height: 20%;
+}
+
+#language-button {
+    background-color: #f5f6f7;
+    border-color: #ccd0d5;
+    padding: 0 8px;
+    font-weight: 500;
+    font-size: 18px;
+    color: black;
+    border: 1px solid rgb(204, 208, 213);
+    transition: 250ms ease;
+}
+
+#language-button:hover {
+    background-color: #ebedf0;
+    text-decoration: none;
+}
+
+.pagination_list {
+    padding-top: 20px;
+    border-top: 1px solid #DDDFE2;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 15px;
+    font-size: 12px;
+    color: #8A8D91;
+    text-decoration: none;
+}
+
+.pagination_list>li>a:hover {
+    text-decoration: underline
+}
+
+.copyright-container {
+    font-size: 12px;
+    margin-top: 15px;
+    color: #737373;
+}
