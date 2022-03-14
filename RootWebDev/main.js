@@ -15,19 +15,26 @@ let state = [
 ]
 
 function renderTodos(){
-  let todos = '';
-  todoList.innerHTML = '';
-  for(let todo of state){
-    todos += `
-    <li class="todo">
-          <input type="checkbox" class="todo_done-check" placeholder = 'New task'/>
-          <span class="todo-text">${todo.todoValue}</span>
-          <button class="todo-remove_button" data-id = ${todo.id}>
-            <i class="bi bi-trash3-fill"></i>
-          </button>
-        </li>
-    `
-  }
+    let todos = '';
+    todoList.innerHTML = '';
+    for(let todo of state){
+      todos += `
+      <li class="todo">
+            <input type="checkbox" class="todo_done-check" placeholder = 'New task'/>
+            <span class="todo-text">${todo.todoValue}</span>
+            <button class = 'todo-copy_button' data-id = ${todo.id}>
+              copy
+            </button>
+            <button class="todo-remove_button" data-id = ${todo.id}>
+              <i class="bi bi-trash3-fill"></i>
+            </button>
+          </li>
+      `
+    }
+    
+    todoList.insertAdjacentHTML("afterbegin", todos);
+    renderEvent();
+    copyEvent();
   
   todoList.insertAdjacentHTML("afterbegin", todos);
   renderEvent();
@@ -44,6 +51,20 @@ function renderEvent(){
     }
   })
 }
+function copyEvent(){
+  todosRemoveButton = document.querySelectorAll('.todo-copy_button');
+  todosRemoveButton.forEach(item => {
+    item.onclick = e => {
+      e.preventDefault();
+      let id = +item.dataset.id;
+      state.push({
+        todoValue: state[id].todoValue, 
+        id: state.length
+      });
+      renderTodos();
+    }
+  })
+}
 
 function createTodo(){
   let newTodoValue = newTodoInput.value.trim();
@@ -56,6 +77,7 @@ function createTodo(){
   newTodoInput.value = '';
   renderTodos();
 }
+
 
 newTodoAddButton.onclick = (e) => {
   e.preventDefault();

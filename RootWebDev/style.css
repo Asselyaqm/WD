@@ -89,6 +89,13 @@
     gap: 0 20px;
   }
   
+  .todo-copy-button{
+      border: none;
+      outline: none;
+      color:#555557;
+      cursor: pointer;
+
+  }
   .todo-remove_button{
     border: none;
     outline: none;
