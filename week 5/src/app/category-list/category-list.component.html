@@ -1,0 +1,17 @@
+<h2>Shop by Category</h2>
+
+<div class="category-list-container">
+  <div class="category-list-container-item" *ngFor="let category of categories">
+    <img class="category-image" src="{{ category.image }}">
+
+    <h3 class="category-title">
+      <button [class.selected]="category===selectedCategory" [title]="category.name" (click)="onSelect(category)">
+        {{ category.name }}
+      </button>
+    </h3>
+  </div>
+</div>
+
+<div *ngIf="selectedCategory">
+  <app-product-list [products]="selectedCategory.products" (eventRemove)="onRemove($event)"></app-product-list>
+</div>

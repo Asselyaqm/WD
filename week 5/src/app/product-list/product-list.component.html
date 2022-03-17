@@ -1,0 +1,37 @@
+<h2>Products</h2>
+
+<div class="product-list-container">
+  <div *ngFor="let product of products">
+
+    <img class="product-image" src="{{ product.image }}" alt="no image">
+    <h3>
+      <a
+        [title]="product.name + ' details'"
+        href="{{ product.url }}"
+        target="_blank">
+        {{ product.name }}
+      </a>
+    </h3>
+
+    <h3>Price: {{ product.price | currency }} </h3>
+
+    <p *ngIf="product.description">
+      Description: {{ product.description }}
+    </p>
+
+    <p *ngIf="product.rating">
+      Likes: {{ product.rating }}
+    </p>
+
+    <div class="product-list-container-buttons">
+      <a href="https://t.me/share/url?url={{product.url}}&text={{product.name}}" target="_blank">
+        <button type="button" (click)="share()"> Share </button>
+      </a>
+      <button class="like-button" type="button" (click)="productLikes(product)"> Like </button>
+      <button class="remove-button" type="button" (click)="removeProduct(product.id)"> Remove </button>
+    </div>
+
+    <app-product-alerts [product]="product" (notify)="onNotify()"></app-product-alerts>
+
+  </div>
+</div>
