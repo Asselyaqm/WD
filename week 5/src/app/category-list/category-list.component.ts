@@ -9,17 +9,19 @@ import {Product, products} from "../products";
   styleUrls: ['./category-list.component.css']
 })
 export class CategoryListComponent {
-
   categories = categories;
   selectedCategory?: Category;
   products?: Product[];
-
-  constructor() { }
-
+  rating_list = [1,2,3,4,5];
+  rating_score=4.3;
+  constructor() {
+  }
+  changeScore(x: number) : void {
+    this.rating_score = (this.rating_score + x)/2;
+  }
   onSelect(category: Category): void {
     this.selectedCategory = category;
   }
-
   onRemove(index: number): void {
     this.categories.forEach( category => {
       if(category == this.selectedCategory) {
