@@ -1,0 +1,9 @@
+<div class="top-bar">
+  <h1 class="top-bar-page-name" [routerLink]="['/']">Магазин косметики</h1>
+
+  <div *ngIf="logged" class="top-right">
+    <img src="assets/images/cart.png" class="cart" [routerLink]="['/', 'cart']">
+    <h2 class="login-btn" (click)="logout()">log out</h2>
+  </div>
+  <h2 *ngIf="!logged" class="login-btn" [routerLink]="['/', 'auth']">log in</h2>
+</div>

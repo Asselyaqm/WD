@@ -1,0 +1,17 @@
+.categories-page{
+  border: 3px solid #ffe0c0;
+  background: #fff0d0;
+  font-size: 15px;
+  padding: 10px;
+}
+.categories-page-name{
+  text-align: center;
+}
+.categories-categories{
+  display: flex;
+  flex-direction: column;
+}
+.categories-category-name{
+  margin-top: 5px;
+  cursor: pointer;
+}
